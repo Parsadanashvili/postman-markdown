@@ -1,0 +1,21 @@
+{
+  "name": "postman-to-markdown",
+  "version": "1.0.0",
+  "description": "Generate documentation in markdown from postman collection.",
+  "main": "./src/index.js",
+  "author": "Parsadanashvili",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  },
+  "scripts": {
+    "test": "node ./bin/global.js \"./example/Sprenty API.postman_collection.json\""
+  },
+  "bin": {
+    "postman-markdown": "./bin/global.js"
+  },
+  "preferGlobal": true,
+  "devDependencies": {
+    "console-log-colors": "^0.2.3"
+  }
+}
